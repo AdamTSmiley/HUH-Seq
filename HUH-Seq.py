@@ -107,8 +107,6 @@ df_percent_reduction['E1_H_percent_reduction'] = ((df_averaged['Ref_mean'] - df_
 df_percent_reduction['E1_L_percent_reduction'] = ((df_averaged['Ref_mean'] - df_averaged['E1_L_mean']) / df_averaged['Ref_mean']) * 100
 df_percent_reduction['E2_H_percent_reduction'] = ((df_averaged['Ref_mean'] - df_averaged['E2_H_mean']) / df_averaged['Ref_mean']) * 100
 df_percent_reduction['E2_L_percent_reduction'] = ((df_averaged['Ref_mean'] - df_averaged['E2_L_mean']) / df_averaged['Ref_mean']) * 100
-df_percent_reduction['RepB_percent_reduction'] = ((df_averaged['Ref_mean'] - df_averaged['RepB_mean']) / df_averaged['Ref_mean']) * 100
-df_percent_reduction['RepBm_percent_reduction'] = ((df_averaged['Ref_mean'] - df_averaged['RepBm_mean']) / df_averaged['Ref_mean']) * 100
 
 numeric_columns = df_percent_reduction.select_dtypes(include=[np.number]).columns
 df_percent_reduction[numeric_columns] = df_percent_reduction[numeric_columns].clip(lower=0)
