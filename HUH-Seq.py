@@ -94,8 +94,7 @@ df_averaged['k-mer #'] = df_combined['k-mer #']
 
 # Reorder columns for export
 df_averaged = df_averaged[['k-mer #', 'kmers', 'Ref_mean', 'PCV2_H_mean', 'PCV2_L_mean',
-                           'E1_H_mean', 'E1_L_mean', 'E2_H_mean', 'E2_L_mean',
-                           'RepB_mean', 'RepBm_mean']]
+                           'E1_H_mean', 'E1_L_mean', 'E2_H_mean', 'E2_L_mean']]
 
 # Create the percent reduction DataFrame
 df_percent_reduction = pd.DataFrame()
